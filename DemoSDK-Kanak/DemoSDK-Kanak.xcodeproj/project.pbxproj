@@ -8,16 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		10630C6A249E596F000E18DE /* DemoSDK_Kanak.h in Headers */ = {isa = PBXBuildFile; fileRef = 10630C68249E596F000E18DE /* DemoSDK_Kanak.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96B14AE844AC6E0DA772A038 /* Pods_DemoSDK_Kanak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE28B184D63000B4C5769FC8 /* Pods_DemoSDK_Kanak.framework */; };
+		10630C91249E61C1000E18DE /* DemoSDKServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10630C90249E61C1000E18DE /* DemoSDKServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		10630C65249E596F000E18DE /* DemoSDK_Kanak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DemoSDK_Kanak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10630C68249E596F000E18DE /* DemoSDK_Kanak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoSDK_Kanak.h; sourceTree = "<group>"; };
-		10630C69249E596F000E18DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34208A7AE072004D0C53AAAE /* Pods-DemoSDK-Kanak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSDK-Kanak.debug.xcconfig"; path = "Target Support Files/Pods-DemoSDK-Kanak/Pods-DemoSDK-Kanak.debug.xcconfig"; sourceTree = "<group>"; };
-		499A9B15CD251148721DE6FC /* Pods-DemoSDK-Kanak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSDK-Kanak.release.xcconfig"; path = "Target Support Files/Pods-DemoSDK-Kanak/Pods-DemoSDK-Kanak.release.xcconfig"; sourceTree = "<group>"; };
-		EE28B184D63000B4C5769FC8 /* Pods_DemoSDK_Kanak.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoSDK_Kanak.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10630C69249E596F000E18DE /* DemoSDK_Kanak.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DemoSDK_Kanak.plist; sourceTree = "<group>"; };
+		10630C90249E61C1000E18DE /* DemoSDKServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoSDKServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,7 +23,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96B14AE844AC6E0DA772A038 /* Pods_DemoSDK_Kanak.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,8 +34,6 @@
 			children = (
 				10630C67249E596F000E18DE /* DemoSDK-Kanak */,
 				10630C66249E596F000E18DE /* Products */,
-				267796EAEF8BFA1077045437 /* Pods */,
-				A5D865D6D47B07B9F6DA1DF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,28 +48,11 @@
 		10630C67249E596F000E18DE /* DemoSDK-Kanak */ = {
 			isa = PBXGroup;
 			children = (
+				10630C90249E61C1000E18DE /* DemoSDKServiceManager.swift */,
 				10630C68249E596F000E18DE /* DemoSDK_Kanak.h */,
-				10630C69249E596F000E18DE /* Info.plist */,
+				10630C69249E596F000E18DE /* DemoSDK_Kanak.plist */,
 			);
 			path = "DemoSDK-Kanak";
-			sourceTree = "<group>";
-		};
-		267796EAEF8BFA1077045437 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				34208A7AE072004D0C53AAAE /* Pods-DemoSDK-Kanak.debug.xcconfig */,
-				499A9B15CD251148721DE6FC /* Pods-DemoSDK-Kanak.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		A5D865D6D47B07B9F6DA1DF5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EE28B184D63000B4C5769FC8 /* Pods_DemoSDK_Kanak.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +73,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10630C6D249E596F000E18DE /* Build configuration list for PBXNativeTarget "DemoSDK-Kanak" */;
 			buildPhases = (
-				A1D47F99A81B87D4E2460347 /* [CP] Check Pods Manifest.lock */,
 				10630C60249E596F000E18DE /* Headers */,
 				10630C61249E596F000E18DE /* Sources */,
 				10630C62249E596F000E18DE /* Frameworks */,
@@ -121,6 +98,7 @@
 				TargetAttributes = {
 					10630C64249E596F000E18DE = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -152,36 +130,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		A1D47F99A81B87D4E2460347 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DemoSDK-Kanak-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		10630C61249E596F000E18DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10630C91249E61C1000E18DE /* DemoSDKServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,14 +264,14 @@
 		};
 		10630C6E249E596F000E18DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34208A7AE072004D0C53AAAE /* Pods-DemoSDK-Kanak.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "DemoSDK-Kanak/Info.plist";
+				INFOPLIST_FILE = "DemoSDK-Kanak/DemoSDK_Kanak.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kanak.DemoSDK-Kanak";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -335,14 +290,14 @@
 		};
 		10630C6F249E596F000E18DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 499A9B15CD251148721DE6FC /* Pods-DemoSDK-Kanak.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "DemoSDK-Kanak/Info.plist";
+				INFOPLIST_FILE = "DemoSDK-Kanak/DemoSDK_Kanak.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
